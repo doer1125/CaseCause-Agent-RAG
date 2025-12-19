@@ -1,0 +1,5 @@
+# 创建.gitignore文件
+echo ".idea/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "./local_models/" >> .gitignore
