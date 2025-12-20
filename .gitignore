@@ -2,4 +2,4 @@
 echo ".idea/" >> .gitignore
 echo "__pycache__/" >> .gitignore
 echo "*.pyc" >> .gitignore
-echo "./local_models/" >> .gitignore
+echo "*/local_models/" >> .gitignore

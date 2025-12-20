@@ -4,11 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="085576e4-94d9-45bb-ad79-25443383fdef" name="更改" comment="1.检索器&#10;2.向量数据库" />
+    <list default="true" id="085576e4-94d9-45bb-ad79-25443383fdef" name="更改" comment="基于 &quot;规则+AI&quot; 诉求要点提取">
+      <change afterPath="$PROJECT_DIR$/.trae/documents/设计_规则+AI_双引擎策略处理投诉描述文本.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complaint_analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/complaints.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/.msc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/.mv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/1_Pooling/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/config_sentence_transformers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/configuration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/modules.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/pytorch_model.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/sentence_bert_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/vocab.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CaseCause-RAG-Agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CaseCause-RAG-Agent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_hybrid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_hybrid_search.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="repository" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -103,6 +132,8 @@
       <workItem from="1766142115540" duration="959000" />
       <workItem from="1766143085432" duration="338000" />
       <workItem from="1766143490572" duration="348000" />
+      <workItem from="1766213765731" duration="217000" />
+      <workItem from="1766247209825" duration="125000" />
     </task>
     <task id="LOCAL-00001" summary="1.检索器&#10;2.向量数据库">
       <option name="closed" value="true" />
@@ -112,15 +143,36 @@
       <option name="project" value="LOCAL" />
       <updated>1766143787935</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="混合检索：语义检索 + bm25关键字检索 + 元数据过滤">
+      <option name="closed" value="true" />
+      <created>1766213911259</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766213911259</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.检索器&#10;2.向量数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.检索器&#10;2.向量数据库" />
+    <MESSAGE value="混合检索：语义检索 + bm25关键字检索 + 元数据过滤" />
+    <MESSAGE value="基于 &quot;规则+AI&quot; 诉求要点提取" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于 &quot;规则+AI&quot; 诉求要点提取" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CaseCause_RAG_Agent$Rag_Retrieved.coverage" NAME="Rag_Retrieved 覆盖结果" MODIFIED="1766137396368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
