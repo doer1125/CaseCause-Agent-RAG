@@ -2,9 +2,14 @@ import tiktoken
 import re 
 from langchain_core.documents import Document
 import PyPDF2
-import pylcs
 import pandas as pd
 import textwrap
+
+# 尝试导入pylcs，如果失败则设置为None
+try:
+    import pylcs
+except ImportError:
+    pylcs = None
 
 
 
@@ -182,18 +187,19 @@ def is_similarity_ratio_lower_than_th(large_string, short_string, th):
     Returns:
         True if the similarity ratio is lower than the threshold, False otherwise.
     """
-
-    # Calculate the length of the longest common subsequence (LCS)
-    lcs = pylcs.lcs_sequence_length(large_string, short_string)
-
-    # Calculate the similarity ratio
-    similarity_ratio = lcs / len(short_string)
+    
+    # 如果pylcs不可用，返回默认值
+    if pylcs is None:
+        # 使用简单的字符匹配作为默认实现
+        common_chars = set(large_string) & set(short_string)
+        similarity_ratio = len(common_chars) / len(short_string) if short_string else 0
+    else:
+        # 使用pylcs计算LCS
+        lcs = pylcs.lcs_sequence_length(large_string, short_string)
+        similarity_ratio = lcs / len(short_string) if short_string else 0
 
     # Check if the similarity ratio is lower than the threshold
-    if similarity_ratio < th:
-        return True
-    else:
-        return False
+    return similarity_ratio < th
     
 
 def analyse_metric_results(results_df):
