@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh wp14">
+  <w:body>
+    <w:p w:rsidR="00000000" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:before="480" w:after="120"/>
+        <w:rPr>
+          <w:rFonts w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:cs="微软雅黑"/>
+          <w:b/>
+          <w:sz w:val="32"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:cs="微软雅黑"/>
+          <w:b/>
+          <w:sz w:val="32"/>
+        </w:rPr>
+        <w:t>卫健委公文</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00000000" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="240"/>
+        <w:rPr>
+          <w:rFonts w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:cs="微软雅黑"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="微软雅黑" w:hAnsi="微软雅黑" w:cs="微软雅黑"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>【标题将自动填充】</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00000000" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="240"/>
+      </w:pPr>
+    </w:p>
+    <w:p w:rsidR="00000000" w:rsidRDefault="00000000">
+      <w:pPr>
+        <w:spacing w:before="200" w:after="200"/>
+        <w:rPr>
+          <w:rFonts w:ascii="仿宋" w:hAnsi="仿宋" w:cs="仿宋"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="仿宋" w:hAnsi="仿宋" w:cs="仿宋"/>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>【正文内容将自动填充】</w:t>
+      </w:r>
+    </w:p>
+  </w:body>
+</w:document>

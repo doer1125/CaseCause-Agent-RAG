@@ -5,9 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="085576e4-94d9-45bb-ad79-25443383fdef" name="更改" comment="基于 &quot;规则+AI&quot; 诉求要点提取">
-      <change afterPath="$PROJECT_DIR$/.trae/documents/设计_规则+AI_双引擎策略处理投诉描述文本.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complaint_analyzer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/complaints.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/plan_20251220_170308.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/plan_20251226_160528.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/plan_20251226_170933.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/使用LlamaFactory微调Qwen2.5-7B-Instruct模型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/复杂流程可解释性增强方案.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/多轮对话管理方案设计与实现.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.trae/documents/实现多轮对话功能.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_duplicates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_unique.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conversation_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/convert_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/convert_to_alpaca.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/dataset_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/health_commission_data_alpaca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/公共场所卫生管理条例实施细则.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/医疗机构管理条例_20220329.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/放射卫生技术服务机构管理办法.doc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/document_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finetune_qwen2.5-7b_health.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_health_commission_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_pdf_document.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_commission_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_commission_data_1000_unique.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_commission_data_alpaca.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health_document_template.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intent_recognizer.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/.msc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/.mv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/1_Pooling/config.json" afterDir="false" />
@@ -23,10 +48,151 @@
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/tokenizer.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/tokenizer_config.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/local_models/bge-large-zh/vocab.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CaseCause-RAG-Agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CaseCause-RAG-Agent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.lm_head.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.input_layernorm.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.down_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.down_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.down_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.gate_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.gate_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.gate_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.up_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.up_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.mlp.up_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.post_attention_layernorm.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.k_proj.base_layer.bias.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.k_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.k_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.k_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.o_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.o_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.o_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.q_proj.base_layer.bias.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.q_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.v_proj.base_layer.bias.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.v_proj.base_layer.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/base_model.model.model.norm.weight.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/offload/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-final/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/all_results.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/optimizer.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/rng_state.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/scheduler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-1/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/optimizer.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/rng_state.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/scheduler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/checkpoint-2/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/train_results.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/trainer_log.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health-llamafactory/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/optimizer.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/rng_state.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/scaler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/scheduler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-1/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/optimizer.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/rng_state.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/scaler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/scheduler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-2/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/adapter_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/adapter_model.safetensors" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/added_tokens.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/chat_template.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/merges.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/optimizer.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/rng_state.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/scaler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/scheduler.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/special_tokens_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/tokenizer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/tokenizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/trainer_state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/training_args.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qwen2.5-7b-health/checkpoint-3/vocab.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reasoning_trace.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/streamlit_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp_22232_1766678573577.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_compression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/verify_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MarsCodeWorkspaceAppSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_hybrid_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_hybrid_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rag_Retrieved.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rag_Retrieved.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bm25_retriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/bm25_retriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/complaint_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/complaint_analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/案由清单.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/案由清单.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reranker.py" beforeDir="false" afterPath="$PROJECT_DIR$/reranker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +228,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Rag_Retrieved.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/workspace/Agent/CaseCause-RAG-Agent&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Rag_Retrieved.executor": "Run",
+    "Python.app.executor": "Debug",
+    "Python.streamlit_app.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/workspace/Agent/CaseCause-RAG-Agent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Python.app">
     <configuration name="Rag_Retrieved" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
       <option name="ENV_FILES" value="" />
@@ -106,8 +274,56 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CaseCause-RAG-Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="streamlit_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CaseCause-RAG-Agent" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/streamlit_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.streamlit_app" />
         <item itemvalue="Python.Rag_Retrieved" />
       </list>
     </recent_temporary>
@@ -133,7 +349,9 @@
       <workItem from="1766143085432" duration="338000" />
       <workItem from="1766143490572" duration="348000" />
       <workItem from="1766213765731" duration="217000" />
-      <workItem from="1766247209825" duration="125000" />
+      <workItem from="1766247209825" duration="185000" />
+      <workItem from="1766327391470" duration="14000" />
+      <workItem from="1767055646996" duration="11012000" />
     </task>
     <task id="LOCAL-00001" summary="1.检索器&#10;2.向量数据库">
       <option name="closed" value="true" />
@@ -151,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766213911259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="基于 &quot;规则+AI&quot; 诉求要点提取">
+      <option name="closed" value="true" />
+      <created>1766247372727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766247372727</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +400,27 @@
     <MESSAGE value="基于 &quot;规则+AI&quot; 诉求要点提取" />
     <option name="LAST_COMMIT_MESSAGE" value="基于 &quot;规则+AI&quot; 诉求要点提取" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app.py</url>
+          <line>155</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CaseCause_RAG_Agent$Rag_Retrieved.coverage" NAME="Rag_Retrieved 覆盖结果" MODIFIED="1766137396368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaseCause_RAG_Agent$streamlit_app.coverage" NAME="streamlit_app 覆盖结果" MODIFIED="1767056745463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CaseCause_RAG_Agent$app.coverage" NAME="app 覆盖结果" MODIFIED="1767069641235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

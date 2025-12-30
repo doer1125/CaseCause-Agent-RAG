@@ -85,27 +85,93 @@ class ComplaintAnalyzer:
     
     def ai_based_extraction(self, complaint):
         """
-        基于AI的投诉要点提取
+        基于AI的投诉要点提取，使用本地Ollama部署的Qwen2.5-7B-Instruct模型
         
         Args:
             complaint: 投诉文本
             
         Returns:
-            提取的投诉要点文本
+            提取的投诉要点列表
         """
-        # 使用向量模型生成投诉的语义表示
-        # 这里简化处理，直接使用投诉文本作为检索查询
-        # 实际应用中可以使用更复杂的AI模型进行要点提取
-        
-        # 分词处理，提取关键词
-        seg_list = jieba.cut(complaint)
-        keywords = [word for word in seg_list if len(word) > 1]
-        
-        # 去重并排序
-        keywords = list(set(keywords))
-        keywords.sort()
-        
-        return keywords
+        try:
+            import ollama
+            
+            # 设计提示模板，让模型提取结构化的投诉要点
+            prompt = f"""请从以下投诉文本中提取投诉要点，包括：
+1. 投诉类型（如：非法行医、服务态度、乱收费、卫生问题、药品回扣等）
+2. 涉及人员（如：医生姓名、护士等）
+3. 涉及机构（如：医院名称、卫健委等）
+4. 时间（如：日期、时间段等）
+5. 地点（如：医院地址、区域等）
+6. 具体问题（如：未取得医疗机构执业许可证擅自执业、服务态度恶劣等）
+
+请以简洁的JSON格式输出，键名分别为：complaint_type、persons、institutions、times、locations、issues。
+
+投诉文本：{complaint}
+"""
+            
+            # 调用本地Ollama模型
+            response = ollama.chat(
+                model="qwen2.5:7b-instruct",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "你是一名专业的投诉分析专家，擅长从投诉文本中提取结构化的投诉要点。"
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                format="json"
+            )
+            
+            # 解析模型输出
+            import json
+            ai_result = json.loads(response["message"]["content"])
+            
+            # 提取关键词列表
+            keywords = []
+            
+            # 合并所有提取的要点为关键词
+            if ai_result.get("complaint_type"):
+                keywords.extend(ai_result["complaint_type"])
+            if ai_result.get("persons"):
+                keywords.extend(ai_result["persons"])
+            if ai_result.get("institutions"):
+                keywords.extend(ai_result["institutions"])
+            if ai_result.get("times"):
+                keywords.extend(ai_result["times"])
+            if ai_result.get("locations"):
+                keywords.extend(ai_result["locations"])
+            if ai_result.get("issues"):
+                keywords.extend(ai_result["issues"])
+            
+            # 去重并排序
+            keywords = list(set(keywords))
+            keywords.sort()
+            
+            # 将AI提取的结构化结果保存，便于后续使用
+            self.ai_structured_result = ai_result
+            
+            return keywords
+        except Exception as e:
+            print(f"AI提取投诉要点失败：{e}")
+            # 失败时回退到基于规则的提取方法
+            rule_based_result = self.rule_based_extraction(complaint)
+            keywords = []
+            if rule_based_result.get("complaint_type"):
+                keywords.extend(rule_based_result["complaint_type"])
+            if rule_based_result.get("issues"):
+                keywords.extend(rule_based_result["issues"])
+            if rule_based_result.get("persons"):
+                keywords.extend(rule_based_result["persons"])
+            if rule_based_result.get("institutions"):
+                keywords.extend(rule_based_result["institutions"])
+            # 去重并排序
+            keywords = list(set(keywords))
+            keywords.sort()
+            return keywords
     
     def extract_complaint_points(self, complaint):
         """
